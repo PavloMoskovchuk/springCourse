@@ -13,5 +13,8 @@
     <bean id="musicPlayer"
           class="com.springcourse.MusicPlayer">
         <property name="music" ref="musicBean"/>
+
+        <property name="name" value="John Snow"/>
+        <property name="volume" value="10"/>
     </bean>
 </beans>
