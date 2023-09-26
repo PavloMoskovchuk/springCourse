@@ -13,8 +13,15 @@ public class TestSpring {
                 "applicationContext.xml"
         );
 
-        Computer computer = context.getBean("computer", Computer.class);
-        System.out.println(computer);
+        MusicPlayer player = context.getBean("musicPlayer", MusicPlayer.class);
+        System.out.println(player.getVolume());
+        System.out.println(player.getName());
+
+        ClassicalMusic classicalMusic = context.getBean("classicalMusic", ClassicalMusic.class);
+
+
+//        Computer computer = context.getBean("computer", Computer.class);
+//        System.out.println(computer);
 
 //        MusicPlayer player = context.getBean("musicPlayer", MusicPlayer.class);
 //        player.play();
